@@ -19,6 +19,7 @@
 		65A7D2F222B55F6700C6B554 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A7D2F122B55F6700C6B554 /* InterfaceController.swift */; };
 		65A7D2F422B55F6700C6B554 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A7D2F322B55F6700C6B554 /* ExtensionDelegate.swift */; };
 		65A7D2F622B55F6800C6B554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A7D2F522B55F6800C6B554 /* Assets.xcassets */; };
+		65A7D30622B5602400C6B554 /* MandelbrotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A7D30522B5602400C6B554 /* MandelbrotController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		65A7D2F322B55F6700C6B554 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		65A7D2F522B55F6800C6B554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65A7D2F722B55F6800C6B554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65A7D30522B5602400C6B554 /* MandelbrotController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandelbrotController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				65A7D2F322B55F6700C6B554 /* ExtensionDelegate.swift */,
 				65A7D2F522B55F6800C6B554 /* Assets.xcassets */,
 				65A7D2F722B55F6800C6B554 /* Info.plist */,
+				65A7D30522B5602400C6B554 /* MandelbrotController.swift */,
 			);
 			path = "MandelbrotWatchApp WatchKit Extension";
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A7D30622B5602400C6B554 /* MandelbrotController.swift in Sources */,
 				65A7D2F422B55F6700C6B554 /* ExtensionDelegate.swift in Sources */,
 				65A7D2F222B55F6700C6B554 /* InterfaceController.swift in Sources */,
 			);

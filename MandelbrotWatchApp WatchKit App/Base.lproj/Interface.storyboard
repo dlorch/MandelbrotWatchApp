@@ -1,15 +1,41 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MandelbrotWatchApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Mandelbrot Set" id="ZDL-X7-yje">
+                            <connections>
+                                <segue destination="Wdr-F4-CxR" kind="push" id="qLn-R4-Zyu"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
+        </scene>
+        <!--Mandelbrot Controller-->
+        <scene sceneID="XhK-kJ-w4V">
+            <objects>
+                <controller id="Wdr-F4-CxR" customClass="MandelbrotController" customModule="MandelbrotWatchApp_WatchKit_Extension">
+                    <items>
+                        <imageView width="1" height="1" alignment="left" contentMode="center" id="QOH-Eg-avu"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="QOH-Eg-avu" id="izM-Zg-wVM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="333" y="31"/>
         </scene>
     </scenes>
 </document>
